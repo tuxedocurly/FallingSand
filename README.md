@@ -1,14 +1,5 @@
 # FallingSand
 <div id="top"></div>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
 
 <!-- PROJECT SHIELDS -->
 <!--
@@ -30,23 +21,18 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">"Falling Sand" Particle Simulator</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    This is my implementation of the Falling Sands project, as outlined <a href="[https://github.com/othneildrew/Best-README-Template](http://nifty.stanford.edu/2017/feinberg-falling-sand/assignmentwithoutarrays.html)">here</a>!
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <br />
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/tuxedocurly/FallingSand/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/tuxedocurly/FallingSand/issues">Request Feature</a>
   </p>
 </div>
 
@@ -85,16 +71,17 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+I wrote this Falling Sand Particle Simulator project to hone my Java skills. I've focused primarily on ensuring that particle interactions are relatively realistic.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+Particle Types:
+* WOOD - Floats on WATER, buries in SAND, becomes semi-unstable on WATER (WOOD stacks much like logs)
+* METAL - Solid surface that particles can't pass through. SAND will slide off this surface if the angle is >= ~25 degrees of slope
+* COAL - Hot COALs that set WOOD on fire, turning WOOD particles into COAL particles. Can be turned into CHARCOAL if touched by WATER
+* CHARCOAL - What COAL turns into when touched by WATER. Once charcoal is created, it should behave like wood. NOTE: CHARCOAL is assumed to be wet, since it is generally created by being soaked by the WATER particle (users can still create CHARCOAL particles, but they will not be set on fire by COAL since they are assumed to be "soaked" by WATER)
+* WATER - implemented to "spray" from wherever a user clicks on the screen. Color varies and shimmers for more realism. Turns COAL into CHARCOAL
+* SAND - flows off metal surfaces if the angle is high enough (see METAL above). Stacks symetrically when it falls. Can bury WOOD
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+There are a number of additional features I plan to implement in the future. See the roadmap below for more details on my plans!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -102,16 +89,9 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Java!
 
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [JDK11](https://nextjs.org/](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -120,45 +100,24 @@ This section should list any major frameworks/libraries used to bootstrap your p
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Ensure you have JRE and JDK installed (v11 in this case)
+* [JDK11](https://nextjs.org/](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html)
+* [JRE](https://www.java.com/en/download/manual.jsp)
+
 
 ### Installation
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+1. Download to code from this project and unzip it
+2. Open a terminal of your choice and CD into the directory containing the downloaded .java files
+3. Run the following command to build and launch the application
    ```
-3. Install NPM packages
-   ```sh
-   npm install
+   javac SandDisplay.java && java SandDisplay
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
+4. Have fun! Run some simulations and file bugs if you find any unexpected behavior!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -167,13 +126,14 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [ ] Refactor particle direction comparisons for better readability (i.e. if (DOWN) instead of if (direction == 0))
+- [ ] Refactor particle bounding checks to be contained within class methods for better readability (i.e. if (canMoveLeft()) instead of if (x - 1 > -1))
+- [ ] Finish implementing CHARCOAL particles so that they move like wood
+- [ ] Add more particle types (i.e. ice that melts over time)
+- [ ] Implement some type of "Clear" functionality to clear the screen (ideas: Particle type NUKE that nukes the screen back to EMPTY, boring "Clear" button that immediately sets screen back to EMPTY)
+- [ ] Add color variation to all particle types for more realism. Color variation should be bound to particle and not change a given cell on screen redraw
+- [ ] "Beautify" the UI using JavaFX or some other library
+- [ ] Clean up TODOs left in the java files
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
@@ -204,16 +164,6 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- CONTACT -->
-## Contact
-
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -222,33 +172,6 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+Nothing here for now...
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
-[product-screenshot]: images/screenshot.png
