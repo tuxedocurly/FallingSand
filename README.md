@@ -13,7 +13,7 @@
   ![](https://github.com/tuxedocurly/FallingSand/blob/main/images/SandDisaplyDemo.gif)
 
   <p align="center">
-    This is my implementation of the Falling Sands project, as outlined <a href="[https://github.com/othneildrew/Best-README-Template](http://nifty.stanford.edu/2017/feinberg-falling-sand/assignmentwithoutarrays.html)">here</a>!
+    This is my implementation of the Falling Sands project, as outlined <a href="http://nifty.stanford.edu/2017/feinberg-falling-sand/assignmentwithoutarrays.html">here</a>!
     <br />
     <br />
     <br />
@@ -56,8 +56,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 I wrote this Falling Sand Particle Simulator project to hone my Java skills. I've focused primarily on ensuring that particle interactions are relatively realistic.
 
