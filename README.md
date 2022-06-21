@@ -9,6 +9,8 @@
 <div align="center">
 
   <h3 align="center">"Falling Sand" Particle Simulator</h3>
+  
+  ![](https://github.com/tuxedocurly/FallingSand/blob/main/images/SandDisaplyDemo.gif)
 
   <p align="center">
     This is my implementation of the Falling Sands project, as outlined <a href="[https://github.com/othneildrew/Best-README-Template](http://nifty.stanford.edu/2017/feinberg-falling-sand/assignmentwithoutarrays.html)">here</a>!
