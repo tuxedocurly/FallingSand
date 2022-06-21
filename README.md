@@ -121,7 +121,7 @@ _Below is an example of how you can instruct your audience on installing and set
 - [ ] "Beautify" the UI using JavaFX or some other library
 - [ ] Clean up TODOs left in the java files
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/tuxedocurly/FallingSand/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
