@@ -77,7 +77,7 @@ There are a number of additional features I plan to implement in the future. See
 
 Java!
 
-* [JDK11](https://nextjs.org/](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html)
+* [JDK11](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -89,7 +89,7 @@ Java!
 ### Prerequisites
 
 Ensure you have JRE and JDK installed (v11 in this case)
-* [JDK11](https://nextjs.org/](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html)
+* [JDK11](https://www.oracle.com/java/technologies/javase/jdk11-archive-downloads.html)
 * [JRE](https://www.java.com/en/download/manual.jsp)
 
 
